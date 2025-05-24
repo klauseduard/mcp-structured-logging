@@ -2,6 +2,8 @@
 
 A minimal Model Context Protocol (MCP) server that allows AI agents like Claude to log structured events to files and query recent logs. Perfect for debugging AI workflows, creating audit trails, and tracking AI decision-making processes.
 
+> **🎬 Implementation Demo**: This project serves as a complete demonstration of AI-assisted development. The entire MCP server was built from scratch in ~35 minutes through conversation with Claude. See [`docs/cursor_simple_mcp_structured_logging_se.md`](docs/cursor_simple_mcp_structured_logging_se.md) for the **full development conversation** showing every step from initial concept to production-ready tool with tests and documentation.
+
 ## ✨ Features
 
 - **🔄 Structured logging** in JSON Lines format for easy parsing
@@ -10,6 +12,22 @@ A minimal Model Context Protocol (MCP) server that allows AI agents like Claude 
 - **🔍 Query recent entries** with optional filtering by level/count
 - **⚡ Minimal dependencies** and single-file implementation (~270 lines)
 - **🧪 Comprehensive test suite** with 19 test cases
+
+## 🎬 AI Development Demo
+
+This repository demonstrates **complete AI-assisted software development** from concept to production:
+
+- **📝 Full conversation transcript**: [`docs/cursor_simple_mcp_structured_logging_se.md`](docs/cursor_simple_mcp_structured_logging_se.md) (3,468 lines)
+- **⏱️ Development timeline**: 35 minutes from idea to GitHub repository
+- **🔧 Everything included**: Planning, coding, testing, documentation, deployment
+- **📊 Real logs**: Actual development session logs in `logs/development-session-example.jsonl`
+- **🎯 Production ready**: Comprehensive tests, multi-platform docs, proper packaging
+
+**Perfect for learning:**
+- How AI assistants approach software development
+- MCP server architecture and implementation
+- Rapid prototyping with AI assistance
+- Best practices for AI-assisted coding workflows
 
 ## 🚀 Quick Start
 
@@ -334,6 +352,8 @@ This repository includes a real log file from the development session that creat
 
 This demonstrates how the MCP server captures AI development workflows in real-time, creating valuable audit trails and debugging information. **Total development time: ~35 minutes** for a complete, production-ready MCP server with comprehensive tests and documentation!
 
+> **📖 Want to see the complete development process?** Check out [`docs/cursor_simple_mcp_structured_logging_se.md`](docs/cursor_simple_mcp_structured_logging_se.md) for the **full conversation transcript** (3,468 lines) showing every step of the development process, including research, coding, testing, documentation, and GitHub setup.
+
 ## 🗂️ File Structure
 
 ```
@@ -341,6 +361,8 @@ mcp-structured-logging/
 ├── server.py           # Main MCP server (266 lines)
 ├── test_server.py      # Comprehensive test suite (406 lines)
 ├── requirements.txt    # Dependencies (mcp, pydantic)
+├── docs/              # Implementation demo documentation
+│   └── cursor_simple_mcp_structured_logging_se.md  # Full development conversation (3,468 lines)
 ├── venv/              # Virtual environment (created by you)
 │   ├── bin/python      # Python interpreter for MCP config
 │   └── ...            # Virtual environment files
