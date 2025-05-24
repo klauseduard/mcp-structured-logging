@@ -314,6 +314,26 @@ Each log entry is stored as a JSON object on a single line (JSON Lines format):
 }
 ```
 
+## 📝 Real Development Session Example
+
+This repository includes a real log file from the development session that created this MCP server! See `logs/development-session-example.jsonl` for authentic log entries showing:
+
+- **Documentation updates** as new platform integration guides were added
+- **Problem-solving process** when investigating log file locations  
+- **GitHub repository setup** with commit details and progress tracking
+- **Real-time development workflow** with timestamps and context
+
+**Sample entries from the development session:**
+```json
+{"timestamp": "2025-05-24T10:36:08.642660Z", "level": "info", "message": "Starting README update for Claude AI web interface MCP setup", "context": {"task": "documentation_update", "target": "Claude Code/AI web interface", "status": "researching_current_methods", "web_search_completed": true}}
+
+{"timestamp": "2025-05-24T10:41:34.011941Z", "level": "info", "message": "Starting GitHub repository setup for MCP structured logging project", "context": {"task": "github_setup", "status": "initializing", "steps": ["git_init", "create_repo", "push_code"], "project_ready": true}}
+
+{"timestamp": "2025-05-24T10:42:09.037844Z", "level": "info", "message": "Git repository initialized and first commit created", "context": {"commit_hash": "9c509c9", "files_committed": 6, "lines_added": 1273, "branch": "main", "next_step": "create_github_repo"}}
+```
+
+This demonstrates how the MCP server captures AI development workflows in real-time, creating valuable audit trails and debugging information. **Total development time: ~35 minutes** for a complete, production-ready MCP server with comprehensive tests and documentation!
+
 ## 🗂️ File Structure
 
 ```
@@ -325,9 +345,10 @@ mcp-structured-logging/
 │   ├── bin/python      # Python interpreter for MCP config
 │   └── ...            # Virtual environment files
 ├── logs/              # Log files directory
-│   ├── 2025-05-24.jsonl  # Today's logs
-│   ├── 2025-05-23.jsonl  # Yesterday's logs
-│   └── ...               # Historical daily files
+│   ├── 2025-05-24.jsonl           # Today's logs
+│   ├── development-session-example.jsonl  # Real development session logs
+│   ├── sample.jsonl               # Sample format example
+│   └── ...                        # Historical daily files
 └── README.md          # This documentation
 ```
 
